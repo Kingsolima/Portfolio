@@ -11,9 +11,11 @@ function Home() {
       >
         <div className='max-w-[750px] mx-auto px-6 w-[95%] md:px-10 flex-col gap-5 z-[10] ml-9'>
           <h1 className='text-[40px] text-white font-bold'>
-            Make anything possible with{' '}
+            Webchain {' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
-              Web Development
+            {' '}
+              Dev
+              {' '}
             </span>
           </h1>
 
@@ -23,18 +25,18 @@ function Home() {
 
           <div className='flex-col md:flex-row hidden md:flex gap-4 mt-7'>
             <Link href='/my-projects'>
-              <div className='rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
-                Learn more
+              <div className='rounded-[20px] group relative bg-transparent hover:bg-blue-400 px-5 border border-white py-3 text-lg text-white max-w-[200px]'>
+                My Projects
               </div>
             </Link>
             <Link href='/contact-me'>
-              <div className='rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
-                My projects
+              <div className='rounded-[20px] group relative bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]'>
+                Contact Me
               </div>
             </Link>
             <Link href='/my-skills'>
               <div className='rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
-                Contact me
+                Learn More
               </div>
             </Link>
           </div>
@@ -42,18 +44,18 @@ function Home() {
 
         <div className='absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5'>
           <Link href='/my-projects'>
-            <div className='rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
-              Learn more
+            <div className='rounded-[20px] group bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]'>
+             My projects
             </div>
           </Link>
           <Link href='/contact-me'>
-            <div className='rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
-              My projects
+            <div className='rounded-[20px] group bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]'>
+              Contact Me
             </div>
           </Link>
           <Link href='/my-skills'>
-            <div className='rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
-              Contact me
+            <div className='rounded-[20px] group bg-blue-500 px-5 py-3 text-lg text-white max-w-[200px]'>
+              Learn More
             </div>
           </Link>
         </div>

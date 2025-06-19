@@ -1,6 +1,6 @@
-import { Socials } from "@/constants";
-import Image from "next/image";
-import React from "react";
+import { Socials } from "@/constants"; // Imports list of social media icons from your constants file
+import Image from "next/image";        // Next.js optimized image component
+import React from "react";             // React is required to build this component
 
 const Navbar = () => {
   return (
@@ -8,12 +8,12 @@ const Navbar = () => {
       <div className="flex flex-row gap-3 items-center">
         <div className="relative">
           <Image
-            src="/horseLogo.jpg"
-            alt="logo"
+            src="/horseLogo.jpg"          // Local image file in /public folder
+            alt="logo"                    // Alt text for accessibility
             width={40}
             height={40}
-            className="w-full h-full object-contain rounded-full"
-          /> 
+            className="w-full h-full object-contain rounded-full" // Full size, round image
+          />
         </div>
         <h1 className="text-white text-[25px] font-semibold">
           Webchain{" "}

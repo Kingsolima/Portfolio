@@ -18,7 +18,6 @@ import Transition from './Transition';
 const Navigation = () => {
     const [isRouting, setisRouting] = useState(false); // is a transition happening
     const path = usePathname();                        // current route path (e.g., '/my-skills')
-    const [isActive, setIsActive] = useState(path);    // stores active route (you don’t seem to use this yet)
     const [prevPath, setPrevPath] = useState("/");     // stores previous path  
     
     useEffect(() => {

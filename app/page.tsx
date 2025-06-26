@@ -16,9 +16,14 @@ function Home() {
       {/* Full-screen section with a background image, centered content using Flexbox */}
       <div
         className='flex items-center w-full h-full bg-cover bg-center'
-        style={{ backgroundImage: "url('/main-bg.webp')" }} // inline CSS for background image
+        style={{ 
+          backgroundImage: "url('homepage4.png')", 
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'bottom center'
+        }} // inline CSS for background image
       >
-
+        <div></div>
         {/* Text and button section aligned to the left, responsive padding and width */}
         <div className='max-w-[750px] mx-auto px-6 w-[95%] md:px-10 flex-col gap-5 z-[10] ml-9'>
           
@@ -32,7 +37,9 @@ function Home() {
 
           {/* A paragraph that's only visible on medium screens and above */}
           <p className='text-gray-200 hidden md:block'>
-            My first time using Next JS
+          I'm Omar, an aspiring developer with a passion for building AI-powered products and modern web experiences. I'm currently learning the full stack from the ground up, with a focus on React, Next.js, and creative design. My goal is to bring ideas to life through clean code and meaningful products.
+
+
           </p>
 
           {/* Group of navigation buttons, hidden on small screens */}
@@ -47,17 +54,34 @@ function Home() {
 
             {/* Button: Navigates to /contact-me */}
             <Link href='/contact-me'>
-              <div className='rounded-[20px] group relative bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]'>
+              <div className='rounded-[20px] group relative bg-transparent border  hover:bg-blue-400 border-white px-5 py-3 text-lg text-white max-w-[200px]'>
                 Contact Me
+              </div>
+            </Link>
+
+            {/* Button: Navigates to /my-skills */}
+            <Link href='/about-me'>
+            <div className='rounded-[20px] group relative bg-transparent border  hover:bg-blue-400 border-white px-5 py-3 text-lg text-white max-w-[200px]'>
+            About me
               </div>
             </Link>
 
             {/* Button: Navigates to /my-skills */}
             <Link href='/my-skills'>
               <div className='rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
-                Learn More
+                My Skills
               </div>
             </Link>
+
+            <div className="absolute bottom-8 right-170">
+      <Image
+          src="/pixel-me.png" // my info card that looks like apart of the game
+          alt="Pixel Art of Me"
+          width={100}
+          height={175}
+          className="mb-2" //what is this
+        />
+        </div>
 
           </div>
         </div>
@@ -82,7 +106,7 @@ function Home() {
         </div>
 
         {/* Decorative section with horse and cliff images positioned at the bottom-right */}
-        <div className='absolute bottom-0 right-0 z-[10]'>
+        {/* <div className='absolute bottom-0 right-0 z-[10]'>
           <Image
             src='/horse.png'    // Horse image
             alt='horse'
@@ -96,10 +120,10 @@ function Home() {
             width={480}
             height={480}
           />
-        </div>
+        </div>*/}
 
         {/* Decorative section with full-width trees image along the bottom */}
-        <div className='absolute bottom-0 z-[5] w-full h-auto'>
+        {/*<div className='absolute bottom-0 z-[5] w-full h-auto'>
           <Image
             src='/trees.webp'   // Trees image
             alt='trees'
@@ -107,7 +131,7 @@ function Home() {
             height={2000}
             className='w-full h-full'
           />
-        </div>
+        </div>*/}
 
         {/* Stars image in the top-left corner */}
         <Image

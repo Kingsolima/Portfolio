@@ -20,7 +20,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 // Setting the default <head> metadata for every page that uses this layout
 export const metadata: Metadata = {
-  title: 'Webchain dev',                 // Title that appears in the browser tab
+  title: 'Omar Soliman',                 // Title that appears in the browser tab
   description: 'This is my portfolio',   // Description used by search engines
 }
 

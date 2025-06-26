@@ -78,39 +78,29 @@ export const SkillData = [
 
 export const Socials = [
   {
+    name: "Github",
+    src: "/github.webp",
+    link: "https://github.com/Kingsolima"
+  },
+  {
+    name: "Linkedin",
+    src: "/linkedin.webp",
+    link: "https://linkedin.com/in/omar-soliman-662939283"
+  },
+  {
     name: "Discord",
-    src: "/instagram.svg",
-  },
-  {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
     src: "/discord.svg",
+    link: "https:// discord.com/users/kingbod123_76763"
   },
 ];
 export const Projects = [
+
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/NextWebsite.png",
+    title: "Modern Nextjs Portfolio Website",
+    text: "My first website. It will contain all of my projects and demos for these projects.This was built using Next JS, Typescript, and Tailwind CSS.",
+    src: "/portfolio.png",
   },
-  {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/SpaceWebsite.png",
-  },
-  {
-    title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/WebPortfolio.png",
-  },
-  {
-    title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png",
-  },
+
 ];
 
 export const NavLinks = [
@@ -134,4 +124,13 @@ export const NavLinks = [
     icon: RxClipboard,
     link: "/contact-me",
   },
+];
+
+// navbar buttons
+export const TopNavLinks = [
+  { name: "Home", link: "/" },
+  { name: "My Skills", link: "/my-skills" },
+  { name: "Projects", link: "/my-projects" },
+  { name: "About Me", link: "/about-me" },
+  { name: "Contact Me", link: "/contact-me" },
 ];

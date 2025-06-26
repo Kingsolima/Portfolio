@@ -23,7 +23,7 @@ const Page = () => {
   return (
     // ✅ Full-screen section with background image and centered content
     <div
-      style={{ backgroundImage: "url(/bg-2.jpg)" }}
+      style={{ backgroundImage: "url(/setting1.png)" }}
       className="h-screen w-screen flex items-center justify-center bg-cover bg-center"
     >
       {/* ✅ Content wrapper */}

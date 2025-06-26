@@ -77,6 +77,8 @@ const ProjectCard = ({ image, title, text }: Props) => {
             <p className='text-gray-200 text-[16px]'>{text}</p>
           </div>
         </div>
+        {/*Make it so that the there is fourth thing that will be considered similar to text and title and image in index.ts, and ProjectCard.tsx for the sake of adding projects in the website,
+         is the link to the page that will describe that specific project, like a demo page. We will accomplish this in similar fashion as to how we did this for text, title, and image.*/}
       </motion.div>
     </div>
   )

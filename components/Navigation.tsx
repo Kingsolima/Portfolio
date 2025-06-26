@@ -2,7 +2,7 @@
 "use client";
 
 // ✅ Imports list of nav items (like icons and links)
-import { NavLinks } from '@/constants';
+//import { NavLinks } from '@/constants';
 
 // ✅ For navigating client-side
 import Link from 'next/link';
@@ -43,7 +43,7 @@ const Navigation = () => {
           className='absolute z-[50] -bottom-20 w-[50%] md:w-[20%] max-h-[150px] rounded-full flex justify-bottom items-center border bg-black border-white'>    
         
         {isRouting && <Transition />}
-        {NavLinks.map((nav) => (
+        {/*{NavLinks.map((nav) => (
             <Link
             key={nav.name}
             href={nav.link}
@@ -51,7 +51,7 @@ const Navigation = () => {
             >
             <nav.icon className={`w-[24px] h-[24px] ${path === nav.name ? "text-purple-800" : "text-white"}`} />
             </Link>
-        ))}
+        ))}*/}
     </div>
   )
 }

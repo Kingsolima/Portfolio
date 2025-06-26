@@ -1,35 +1,39 @@
-// ✅ Enables client-side rendering — required for using components with interactivity
 "use client"
 
-// ✅ Import the ProjectCard component (used to show each project)
 import ProjectCard from '@/components/ProjectCard'
-
-// ✅ Import your array of project data from constants file
 import { Projects } from '@/constants'
-
-// ✅ Import React (needed for JSX)
 import React from 'react'
-
+import Link from "next/link";
 
 const Page = () => {
   return (
-    // ✅ Full-screen section with a background image
-    <div
-      style={{ backgroundImage: "url(/mountains.jpg)" }}  // 📷 Mountain image as page background
-      className='w-screen h-screen flex items-center justify-center bg-center bg-cover'
-    >
-      {/* ✅ A responsive grid to display project cards in 2 columns */}
-      <div className='grid grid-cols-2 gap-5 max-w-[90%] max-h-[90%]'>
-        {Projects.map((project, index) => (
+    <main className='h-screen relative'>
+      <div
+        className='flex items-center w-full h-full bg-cover bg-center px-10'
+        style={{ 
+          backgroundImage: "url('duck.png')", 
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'bottom center',
+        }}
+      >
+        <div className='flex flex-col items-center space-y-6'>
+          {/* Render just the first project card for now */}
           <ProjectCard
-            key={index}               // Required unique key for each item in a loop
-            title={project.title}     // Project title
-            text={project.text}       // Project description
-            image={project.src}       // Project image
+            title={Projects[0].title}
+            text={Projects[0].text}
+            image={Projects[0].src}
           />
-        ))}
+
+          {/* Learn More button under the card */}
+          <Link href='/my-projects/portfolio-project'>
+            <div className='rounded-[20px] group relative bg-transparent border border-white px-5 py-3 text-lg text-white hover:bg-white/10 transition-all duration-300'>
+              Learn More
+            </div>
+          </Link>
+        </div>
       </div>
-    </div>
+    </main>
   )
 }
 

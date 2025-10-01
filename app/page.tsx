@@ -1,5 +1,5 @@
 // Importing the React library, which is required to use JSX
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // Importing Next.js Link component to handle client-side navigation
 import Link from 'next/link';
@@ -9,9 +9,17 @@ import Image from 'next/image';
 
 // This is the main functional component called 'Home'
 function Home() {
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
   return (
     // The outermost container using Tailwind to take up the full screen and be relatively positioned
-    <main className='h-screen overflow-hidden relative'>
+    <main className="h-screen w-screen relative overflow-hidden">
 
       {/* Full-screen section with a background image, centered content using Flexbox */}
       <div

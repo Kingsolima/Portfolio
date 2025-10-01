@@ -24,7 +24,7 @@ const Page = () => {
     // ✅ Full-screen section with background image and centered content
     <div
       style={{ backgroundImage: "url(/setting1.png)" }}
-      className="h-screen w-screen flex items-center justify-center bg-cover bg-center"
+      className="overflow-hidden h-screen w-screen flex items-center justify-center bg-cover bg-center"
     >
       {/* ✅ Content wrapper */}
       <div className="flex flex-col gap-20 max-w-[80%] text-center items-center">

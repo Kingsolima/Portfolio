@@ -5,7 +5,7 @@ const page = () => {
   return (
      // ✅ Full-screen section with a background image
     // The outermost container using Tailwind to take up the full screen and be relatively positioned
-    <main className='h-screen relative'>
+    <main className='h-screen overflow-hidden relative'>
     <div
       className='flex items-center w-full h-full bg-cover bg-center'
       style={{ 

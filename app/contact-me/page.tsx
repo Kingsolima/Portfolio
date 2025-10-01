@@ -11,7 +11,7 @@ const Page = () => {
     
     <div
       style={{ backgroundImage: "url(sunsetting.png)" }}  // Outer background (e.g., dark space)
-      className="w-screen h-screen bg-cover bg-center flex items-center justify-center"
+      className="overflow-hidden w-screen h-screen bg-cover bg-center flex items-center justify-center"
     >
       <div
       className="h-[60%] w-[80%] relative rounded-xl border border-white bg-white/10 backdrop-blur-md"

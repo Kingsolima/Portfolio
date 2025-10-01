@@ -11,7 +11,7 @@ import Image from 'next/image';
 function Home() {
   return (
     // The outermost container using Tailwind to take up the full screen and be relatively positioned
-    <main className='h-screen relative'>
+    <main className='h-screen overflow-hidden relative'>
 
       {/* Full-screen section with a background image, centered content using Flexbox */}
       <div

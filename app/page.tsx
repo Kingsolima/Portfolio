@@ -1,3 +1,4 @@
+"use client";
 // Importing the React library, which is required to use JSX
 import React, { useEffect } from 'react';
 
